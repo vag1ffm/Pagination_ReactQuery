@@ -13,9 +13,9 @@ function App() {
         ['coins', page],
         () => GetData(page),
         {
-            keepPreviousData:true
+            keepPreviousData: true
         }
-        )
+    )
 
 
     if (isLoading) {
@@ -34,15 +34,15 @@ function App() {
             <Col className={'d-flex justify-content-center'}>
                 <Button
                     className={'me-2'}
-                    onClick={()=> setPage((page)=> page-10)}
+                    onClick={() => setPage((page) => page - 10)}
                     disabled={!page}
                 >
-                    <h5>Назад</h5>
+                    <h5>Back</h5>
                 </Button>
                 <Button
-                    onClick={()=> setPage((page)=> page+10)}
+                    onClick={() => setPage((page) => page + 10)}
                 >
-                    <h5>Далее</h5>
+                    <h5>After</h5>
                 </Button>
             </Col>
         </div>

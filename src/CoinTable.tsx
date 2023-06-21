@@ -6,7 +6,7 @@ interface CoinTableProps {
     data: ICoin[] | undefined;
 }
 
-// @ts-ignore
+
 const CoinTable: React.FC<CoinTableProps> = ({data}) => {
 
     return (
